@@ -1,5 +1,112 @@
+<link href="https://fonts.gdgdocs.org/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+    .red-text {
+        color: red;
+    }
+    .gray-background{
+        background-color: gray;
+    }
+    /* 定义ID选择器必须添加 # 为前缀。 */
+    #cat-photo-form {
+        background-color: green;
+    }
+    h2 {
+        font-family: Lobster, Monospace;
+    }
 
+    p {
+        font-size: 16px;
+        font-family: Monospace;
+    }
 
+    .thick-green-border {
+        border-color: green;
+        border-width: 10px;
+        border-style: solid;
+        border-radius: 50%;
+    }
 
+    .smaller-image {
+        width: 100px;
+    }
+</style>
 
+<h2 class="red-text">CatPhotoApp</h2>
+<!-- 请只修改这条注释以下的代码 -->
 
+<p>View more <a href="#">cat photos</a></p>
+
+<!-- 请只修改这条注释以上的代码 -->
+
+<a href="#">
+    <img class="smaller-image thick-green-border" src="11.png" alt="A cute orange cat lying on its back">
+</a>
+<a href="#">
+    <img class="smaller-image thick-green-border" src="/images/relaxing-cat.jpg" alt="A cute orange cat lying on its back">
+</a>
+<p class="red-text">在大家心目中，猫是慵懒的可爱的化身，它可以睡饱了再起来吃饭，
+    可以逗趣小耗子，可以卖得了萌，使得了坏，这样百变的小怪兽就集结在一只宠物上，怎能不惹人怜爱。</p>
+<p class="red-text">养动物有的时候，就是介于爱与恨之间，当你钦羡别人萌宠这么可爱的时候，
+    你一定没有想过，狗狗和猫猫会到处拉屎，甚至会屯老鼠，啃鞋子，用爪子爬门，你不理它，
+    它就挠你，你要对它发脾气，它会比你更来劲。所以，狗猫慎入，没有一定的准备，
+    切勿随便去侍养动物。它们一旦认定你了，你就是它们的主人，如果你抛弃它们，它们必定心中重创。
+</p>
+
+<p>Things cats love:</p>
+<ul>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+</ul>
+<p>Top 3 things cats hate:</p>
+<ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+</ol>
+<!-- 输入框 -->
+<input type="text" placeholder="cat photo URL">
+<!-- 构建可以跟服务器交互的Web表单form-->
+<form action="/submit-cat-photo">
+    <input type="text" placeholder="cat photo URL">
+</form>
+<!-- 为form添加一个submit(提交)按钮
+    添加required属性，表示必填项
+-->
+<form action="/submit-cat-photo">
+    <input type="text" required placeholder="cat photo URL">
+    <button type="submit">Submit</button>
+</form>
+<!--
+radio button(单选按钮)
+checkbox(复选按钮)
+id 唯一性
+-->
+<form action="/submit-cat-photo" id="cat-photo-form">
+    <!--  checked 表示默认选中-->
+    <label><input type="checkbox" name="personality" checked>CheckBox</label>
+    <label><input type="checkbox" name="personality">CheckBox</label>
+    <label><input type="checkbox" name="personality">CheckBox</label>
+
+    <label><input type="radio" name="indoor-outdoor" checked> Indoor</label>
+    <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+    <input type="text" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+</form>
+<!--
+div元素，也被称作division(层)元素，是一个盛装其他元素的通用容器,所以可以利用CSS的继承关系把div上的CSS传递给它所有子元素。
+-->
+<div class="gray-background">
+    <p>Things cats love:</p>
+    <ul>
+        <li>cat nip</li>
+        <li>laser pointers</li>
+        <li>lasagna</li>
+    </ul>
+    <p>Top 3 things cats hate:</p>
+    <ol>
+        <li>flea treatment</li>
+        <li>thunder</li>
+        <li>other cats</li>
+    </ol>
+</div>
