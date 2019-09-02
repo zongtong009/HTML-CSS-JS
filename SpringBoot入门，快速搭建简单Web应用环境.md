@@ -14,7 +14,7 @@
 
 - 打开idea，点击新建项目：
 
-- ![img](22/11.png)
+- ![img](/22/11.png)
 
 - 选择Spring Initializr，点击next：
 
