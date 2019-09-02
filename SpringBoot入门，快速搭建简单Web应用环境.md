@@ -14,11 +14,11 @@
 
 - 打开idea，点击新建项目：
 
-- ![img](22/11.png)
+- ![img](/22/11.png)
 
 - 选择Spring Initializr，点击next：
 
-- ![img](file:///C:/Users/donsp/AppData/Local/Packages/Microsoft.Office.OneNote_8wekyb3d8bbwe/TempState/msohtmlclip/clip_image002.png)
+- ![img](/11.PNG)
 
 -  
 
